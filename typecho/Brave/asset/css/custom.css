@@ -1,0 +1,52 @@
+body {
+  background-image: linear-gradient(#FFF 89%, #F0C4D2 110%) !important;
+}
+
+.card {
+  border-radius: 8px !important;
+  box-shadow: 1px 4px 15px rgb(125 147 178 / 30%) !important;
+  border: 1px solid rgba(208, 206, 206, .4) !important;
+  margin: 10px !important;
+}
+
+.avatar {
+  border-radius: 50%;
+  animation: light 4s ease-in-out infinite;
+  transition: 0.5s;
+}
+
+.avatar:hover {
+  transform: scale(1.15) rotate(720deg);
+}
+
+@keyframes light {
+  0% {
+    box-shadow: 0 0 4px #8B0000;
+  }
+
+  25% {
+    box-shadow: 0 0 16px #FFC0CB;
+  }
+
+  50% {
+    box-shadow: 0 0 4px #FF8C00;
+  }
+
+  75% {
+    box-shadow: 0 0 16px #FFC0CB;
+  }
+
+  100% {
+    box-shadow: 0 0 4px #8B0000;
+  }
+}
+
+.bigfontNum {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .bigfontNum {
+    font-size: 1.5rem;
+  }
+}
